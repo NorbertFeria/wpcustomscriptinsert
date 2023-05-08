@@ -1,0 +1,247 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+div.bottomtab{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding:10px 0 10px 20px;
+    background-color: #ffffff;
+}
+
+div.tab button {
+    background-color: #56A9DC;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color:#ffffff;
+}
+
+div.tab button:hover {
+    background-color: #007BB9;
+    color:#ffffff;
+}
+
+div.tab button.active {
+    background-color: #007BB9;
+    color:#ffffff;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color:#ffffff;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin:0 15px 20px 0;
+}
+
+.switch input {display:none;}
+
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin:0 15px 20px 0;
+}
+
+.toggle input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.wpcsi_sc_blank,
+.wpcsi_fs_blank,
+.wpcsi_ab_blank,
+.wpcsi_hs_blank{
+  display:none;
+}
+
+.wpcsi_sc_input_ta,
+.wpcsi_fs_input_ta,
+.wpcsi_hs_input_ta,
+.wpcsi_ab_input_ta{
+  float:left;
+  width:58%;
+}
+
+.wpcsi_sc_input_t,
+.wpcsi_fs_input_t,
+.wpcsi_hs_input_t,
+.wpcsi_ab_input_t{
+  float:left;
+  width:32%;
+}
+
+.wpcsi_sc_r,
+.wpcsi_fs_r,
+.wpcsi_hs_r,
+.wpcsi_ab_r{
+  float:left;
+  width:10%;
+}
+
+.wpcs_btn{
+  display:inline-block;
+  background-color: #56A9DC;
+  color:#ffffff;
+  text-decoration: none;
+  border-radius: 3px; 
+  padding: 10px 16px;
+  border: 1px solid #cccccc;
+  margin: 5px 5px;
+}
+
+.wpcs_btn:hover{
+  background-color: #2271B1;
+  color:#ffffff;
+}
+
+.removescript{
+  display:inline-block;
+  background-color: #E14D42;
+  color:#ffffff;
+  text-decoration: none;
+  border-radius: 3px; 
+  padding: 5px 16px;
+}
+
+.removescript:hover{
+  background-color: #991531;
+  color:#ffffff;
+}
+
+.input_group{
+  margin:3px 0 3px 0;
+}
+
+.wpcsi_sc,
+.wpcsi_ab,
+.wpcsi_fs,
+.wpcsi_hs{
+  border: 1px solid #d3d3d3;
+  padding:10px 10px;
+  margin:0 0 20px;
+  box-shadow: 2px 2px 2px #dedede;
+}
+
+.text_selection{
+  display:none;
+}
+
+.wpcsi_sc_input_ta textarea,
+.wpcsi_hs_input_ta textarea,
+.wpcsi_ab_input_ta textarea,
+.wpcsi_fs_input_ta textarea{
+  max-width: 95%;
+}
+
+.input_group .select_input{
+  width:95%;
+  max-width: 95%;
+}
+
+.input_group .text_input{
+  width:95%;
+  max-width: 95%;
+}
+
+.wpcsi_sc_h,
+.wpcsi_hs_h,
+.wpcsi_ab_h,
+.wpcsi_fs_h{
+  padding:10px 0 10px 10px;
+  background-color: #d3d3d3;
+}
+
+.wpcsi_hs_input_ta_h,
+.wpcsi_ab_input_ta_h,
+.wpcsi_fs_input_ta_h{
+  float:left;
+  width:58%;
+  font-weight: bold;
+}
+
+.wpcsi_hs_input_t_h,
+.wpcsi_ab_input_t_h,
+.wpcsi_fs_input_t_h{
+  float:left;
+  width:32%;
+  font-weight: bold;
+}
+
+.wpcsi_hs_r_h,
+.wpcsi_ab_r_h,
+.wpcsi_fs_r_h{
+  float:left;
+  width:10%;
+}
