@@ -1,24 +1,18 @@
 <?php
 
 /**
- * The plugin bootstrap file
  *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
- * @link              https://webfoundry.solutions
+ * @link              https://github.com/norbertferia
  * @since             1.0.0
  * @package           Wpcsi
  *
  * @wordpress-plugin
  * Plugin Name:       custom script insert
- * Plugin URI:        https://webfoundry.solutions
- * Description:       Custom script insert plugin for header and footer
+ * Plugin URI:        https://github.com/NorbertFeria/wpcustomscriptinsert
+ * Description:       Custom script insert plugin for header and footer plus shortcode creation and insertion.
  * Version:           1.0.0
  * Author:            Norbert Feria
- * Author URI:        https://webfoundry.solutions
+ * Author URI:        https://github.com/norbertferia
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wpcsi
@@ -32,8 +26,6 @@ if ( ! defined( 'WPINC' ) ) {
 
 /**
  * Currently plugin version.
- * Start at version 1.0.0 and use SemVer - https://semver.org
- * Rename this for your plugin and update it as you release new versions.
  */
 define( 'WPCSI_VERSION', '1.0.0' );
 
@@ -66,10 +58,6 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-wpcsi.php';
 
 /**
  * Begins execution of the plugin.
- *
- * Since everything within the plugin is registered via hooks,
- * then kicking off the plugin from this point in the file does
- * not affect the page life cycle.
  *
  * @since    1.0.0
  */
